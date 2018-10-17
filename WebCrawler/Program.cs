@@ -7,10 +7,15 @@ namespace WebCrawler
     {
         static void Main(string[] args)
         {
+            //it is web client 
             var client = new WebClient();
-            var text = client.DownloadString("https://www.facebook.com/");
+            // getting web url to Crawle
+            var text = client.DownloadString("http://lkeshop.somee.com/");
+            // showing the Crawling data
             Console.WriteLine(text);
+            //it pasuse the screen
             Console.ReadKey();
+            //
         }
     }
 }
